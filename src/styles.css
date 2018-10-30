@@ -1,3 +1,15 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 @import url('https://fonts.googleapis.com/css?family=Eater');
+
+h1
+{
+    font-family: 'Eater', cursive;
+    color: white;
+}
+
+.main-background {
+    background-image: url(http://lepassetempsderose.l.e.pic.centerblog.net/o/13a744da.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
