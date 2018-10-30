@@ -5,11 +5,13 @@ import { AgmCoreModule } from '@agm/core';
 
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
+import { ListBonbonsComponent } from './list-bonbons/list-bonbons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    MapComponent,
+    ListBonbonsComponent
   ],
   imports: [
     AgmCoreModule.forRoot({

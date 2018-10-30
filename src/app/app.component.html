@@ -31,9 +31,9 @@
 
 <!-- <div class="row">
     <div class=col-6>
-
+        <app-list-bonbons></app-list-bonbons>
     </div>
-    <div class=col-6>
+    <div class=col-6 carte>
         <app-map></app-map>
     </div>
 
@@ -44,3 +44,4 @@
   
 <p *ngIf="enablePlayMode==false">Enable Geolocalisation to play!</p>
 <app-map [myLng]="myLng" [myLat]="myLat" *ngIf="enablePlayMode==true"></app-map>
+<app-list-bonbons></app-list-bonbons>
