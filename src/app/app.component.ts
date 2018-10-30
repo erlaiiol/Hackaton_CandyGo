@@ -12,12 +12,12 @@ export class AppComponent {
 
   
   enablePlayMode=false;
-displayLocationInfo = (position) => {
-  this.myLng = position.coords.longitude;
-  this.myLat = position.coords.latitude;
-  this.enablePlayMode=true;
-  this.myLng.toFixed(6);
-  this.myLat.toFixed(6);
+  displayLocationInfo = (position) => {
+    this.myLng = position.coords.longitude;
+    this.myLat = position.coords.latitude;
+    this.enablePlayMode=true;
+    this.myLng.toFixed(6);
+    this.myLat.toFixed(6);
 }
 
 
