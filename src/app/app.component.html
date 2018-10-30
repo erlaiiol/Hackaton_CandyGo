@@ -29,19 +29,14 @@
     <img width="100" alt="Angular Logo" src="https://image.freepik.com/icones-gratis/aranha-para-o-halloween_318-30138.jpg">
 </div>
 
-<!-- <div class="row">
-    <div class=col-6>
-        <app-list-bonbons></app-list-bonbons>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <p *ngIf="enablePlayMode==false">Enable Geolocalisation to play!</p>
+            <app-map [myLng]="myLng" [myLat]="myLat" *ngIf="enablePlayMode==true"></app-map>
+        </div>
+        <div class="col-md-6">
+            <app-list-bonbons></app-list-bonbons>
+        </div>
     </div>
-    <div class=col-6 carte>
-        <app-map></app-map>
-    </div>
-
-</div> -->
-  
-  
-  
-  
-<p *ngIf="enablePlayMode==false">Enable Geolocalisation to play!</p>
-<app-map [myLng]="myLng" [myLat]="myLat" *ngIf="enablePlayMode==true"></app-map>
-<app-list-bonbons></app-list-bonbons>
+</div>
