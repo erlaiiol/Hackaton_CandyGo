@@ -13,7 +13,6 @@ export class AppComponent {
 displayLocationInfo = (position) => {
   this.myLng = position.coords.longitude;
   this.myLat = position.coords.latitude;
-  console.log(this.myLng, this.myLat)
   this.enablePlayMode=true;
 }
 
