@@ -1,3 +1,9 @@
 <agm-map [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng" [zoom]="13">
-    <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng"></agm-marker>
+    <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng">
+        <agm-info-window>
+            <!--insérez des infos comme du HTML Classique; les balises fonctionnent, de même que les interpolations {{}}-->
+            <!-- ressource: https://angular-maps.com/api-docs/agm-core/components/agminfowindow -->
+            <!--les inputs sont à mettre entre [], ex [isOpen]="true"-->
+        </agm-info-window>
+    </agm-marker>
 </agm-map>
