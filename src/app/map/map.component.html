@@ -1,13 +1,23 @@
 <div class="container" fxLayout="column">
     <div class="map" fxFlex="1 1 100%" #map>
-        <agm-map [style.height.px]="map.offsetHeight" [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng" [zoom]="13">
-    <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng">
-        <agm-info-window>
-            <!--insérez des infos comme du HTML Classique; les balises fonctionnent, de même que les interpolations {{}}-->
-            <!-- ressource: https://angular-maps.com/api-docs/agm-core/components/agminfowindow -->
-            <!--les inputs sont à mettre entre [], ex [isOpen]="true"-->
-        </agm-info-window>
-    </agm-marker>
-</agm-map>
+        <agm-map [style.height.px]="map.offsetHeight" [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng"
+            [zoom]="13" [styles]="styles">
+            <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng"
+                [iconUrl]="icon">
+                <agm-snazzy-info-window [closeWhenOthersOpen]="true" [showCloseButton]="false">
+                    <ng-template>
+                        <div class="mapCard">
+                            <img src="../assets/images/bonbon01.png">
+                            <p>Bonbon ordinaire</p>
+                            <p>1 point</p>
+                            <button type="button" class="modalBtn" (click)="collectBonbon()">Pick Up !</button>
+                            <!--insérez des infos comme du HTML Classique; les balises fonctionnent, de même que les interpolations {{}}-->
+                            <!-- ressource: https://angular-maps.com/api-docs/agm-core/components/agminfowindow -->
+                            <!--les inputs sont à mettre entre [], ex [isOpen]="true"-->
+                        </div>
+                    </ng-template>
+                </agm-snazzy-info-window>
+            </agm-marker>
+        </agm-map>
     </div>
 </div>

@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./regles-jeu.component.css']
 })
 export class ReglesJeuComponent implements OnInit {
-  rules : boolean = false;
+  rules: boolean = false;
   constructor() { }
 
   ngOnInit() {
   }
-handleClick() {
-  this.rules = !this.rules;
-  console.log("bonjour")
-}
+  handleClick() {
+    this.rules = !this.rules;
+    console.log("bonjour")
+  }
 }
