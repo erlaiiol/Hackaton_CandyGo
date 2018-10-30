@@ -1,0 +1,9 @@
+img {
+    height: 4vw;
+    width: 4vw;
+    filter: grayscale(100%);
+}
+
+td, th {
+    vertical-align: middle;
+}
