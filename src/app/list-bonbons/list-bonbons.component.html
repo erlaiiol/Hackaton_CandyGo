@@ -1,20 +1,20 @@
 <table class="table table-sm table-dark text-center tableau">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Nom</th>
-      <th scope="col">Qualité</th>
-      <th scope="col">Description</th>
-      <th scope="col">Quantité</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let bonbon of candyList; let i = index">
-      <th scope="row"><img src="{{candyList[i].img}}"> </th>
-      <td>{{candyList[i].name}}</td>
-      <td>{{candyList[i].quality}}</td>
-      <td>{{candyList[i].description}}</td>
-      <td>{{candyList[i].quantity}}</td>
-    </tr>
-  </tbody>
-</table>
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Nom</th>
+          <th scope="col">Qualité</th>
+          <th scope="col">Description</th>
+          <th scope="col">Quantité</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bonbon of candyList; let i = index">
+          <th scope="row"><img src="{{candyList[i].img}}"> </th>
+          <td><b>{{candyList[i].name}}</b></td>
+          <td [ngStyle]="{'color':getColor(candyList[i].quality)}">{{candyList[i].quality}}</td>
+          <td>{{candyList[i].description}}</td>
+          <td>{{candyList[i].quantity}}</td>
+        </tr>
+      </tbody>
+    </table>
