@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CandyGo';
+  myLng;
+  myLat;
+  enablePlayMode=false;
+displayLocationInfo = (position) => {
+  this.myLng = position.coords.longitude;
+  this.myLat = position.coords.latitude;
+  this.enablePlayMode=true;
+}
+
+ngOnInit() {
+  if (navigator.geolocation) {
+    this.enablePlayMode=false;
+    navigator.geolocation.getCurrentPosition(this.displayLocationInfo);
+  }
+}
 }

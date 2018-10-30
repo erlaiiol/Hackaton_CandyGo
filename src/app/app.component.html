@@ -32,3 +32,5 @@
   
   
   
+<p *ngIf="enablePlayMode==false">Enable Geolocalisation to play!</p>
+<app-map [myLng]="myLng" [myLat]="myLat" *ngIf="enablePlayMode==true"></app-map>
