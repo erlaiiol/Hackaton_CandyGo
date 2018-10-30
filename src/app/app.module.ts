@@ -2,12 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AgmCoreModule } from '@agm/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { ListBonbonsComponent } from './list-bonbons/list-bonbons.component';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 import { ReglesJeuComponent } from './regles-jeu/regles-jeu.component';
+
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ReglesJeuComponent } from './regles-jeu/regles-jeu.component';
       apiKey: 'AIzaSyBNiGHB5tcAsl9ilspi0aqb093Nlvdy5L8'
     }),
     BrowserModule,
+    HttpClientModule,
     AgmSnazzyInfoWindowModule
   ],
   providers: [],

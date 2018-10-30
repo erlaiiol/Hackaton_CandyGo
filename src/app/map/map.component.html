@@ -1,15 +1,16 @@
 <div class="container" fxLayout="column">
     <div class="map" fxFlex="1 1 100%" #map>
         <agm-map [style.height.px]="map.offsetHeight" [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng"
-            [zoom]="13">
-            <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng" >
+            [zoom]="13" [styles]="styles">
+            <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng"
+                [iconUrl]="icon">
                 <agm-snazzy-info-window [closeWhenOthersOpen]="true" [showCloseButton]="false">
                     <ng-template>
                         <div class="mapCard">
                             <img src="../assets/images/bonbon01.png">
                             <p>Bonbon ordinaire</p>
                             <p>1 point</p>
-                            <button type="button" class="modalBtn">Pick Up !</button>
+                            <button type="button" class="modalBtn" (click)="collectBonbon()">Pick Up !</button>
                             <!--insérez des infos comme du HTML Classique; les balises fonctionnent, de même que les interpolations {{}}-->
                             <!-- ressource: https://angular-maps.com/api-docs/agm-core/components/agminfowindow -->
                             <!--les inputs sont à mettre entre [], ex [isOpen]="true"-->
@@ -20,17 +21,3 @@
         </agm-map>
     </div>
 </div>
-
-
-<!--
-<agm-snazzy-info-window [closeWhenOthersOpen]="true" [showCloseButton]="false">
-    <ng-template>
-        <div class="mapCard">
-            <p class="si-shadow-frame">{{m.venue.metroArea.displayName}}</p>
-            <p class="displayArtist"> {{m.performance[0].displayName}} - {{m.venue.displayName}}</p>
-            <p class="displayDate"> {{m.start.date | date:'dd-MM-yyyy'}}</p>
-            <a class="tickets" href={{m.uri}} target="_blank"><button class="reservBtn2">reservation</button></a>
-        </div>
-    </ng-template>
-</agm-snazzy-info-window>
--->
