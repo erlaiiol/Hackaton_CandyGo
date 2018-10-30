@@ -6,6 +6,7 @@ import { AgmCoreModule } from '@agm/core';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { ListBonbonsComponent } from './list-bonbons/list-bonbons.component';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ListBonbonsComponent } from './list-bonbons/list-bonbons.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBNiGHB5tcAsl9ilspi0aqb093Nlvdy5L8'
     }),
-    BrowserModule
+    BrowserModule,
+    AgmSnazzyInfoWindowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
