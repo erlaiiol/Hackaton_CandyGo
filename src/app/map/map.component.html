@@ -1,5 +1,13 @@
 <div class="container" fxLayout="column">
     <div class="map" fxFlex="1 1 100%" #map>
         <agm-map [style.height.px]="map.offsetHeight" [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng" [zoom]="8"></agm-map>
+    <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng">
+        <agm-info-window>
+            <!--insérez des infos comme du HTML Classique; les balises fonctionnent, de même que les interpolations {{}}-->
+            <!-- ressource: https://angular-maps.com/api-docs/agm-core/components/agminfowindow -->
+            <!--les inputs sont à mettre entre [], ex [isOpen]="true"-->
+        </agm-info-window>
+    </agm-marker>
+</agm-map>
     </div>
 </div>
