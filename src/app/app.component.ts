@@ -24,7 +24,7 @@ displayLocationInfo = (position) => {
 ngOnInit() {
   if (navigator.geolocation) {
     this.enablePlayMode=false;
-    navigator.geolocation.getCurrentPosition(this.displayLocationInfo);
+    navigator.geolocation.getCurrentPosition(this.displayLocationInfo.bind(this));
   }
 }
 }
