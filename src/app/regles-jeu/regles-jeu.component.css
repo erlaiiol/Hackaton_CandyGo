@@ -1,8 +1,11 @@
-.regles {
-  color: white;
+.livre-regles {
+  position: absolute;
+  left: 0;
+  top: -5%;
+  width: 15vmin;
+  height: auto;
 }
 
-.livre-regles {
-  width: 10vmin;
-  height: auto;
+.regles {
+  color: white;
 }
