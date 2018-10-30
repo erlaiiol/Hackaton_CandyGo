@@ -1,3 +1,8 @@
-<agm-map [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng" [zoom]="8">
 
-</agm-map>
+
+
+<div class="container" fxLayout="column">
+    <div class="map" fxFlex="1 1 100%" #map>
+        <agm-map [style.height.px]="map.offsetHeight" [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng" [zoom]="8"></agm-map>
+    </div>
+</div>
