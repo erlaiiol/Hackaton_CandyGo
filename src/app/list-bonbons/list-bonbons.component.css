@@ -10,3 +10,7 @@ img:hover{
 td, th {
     vertical-align: middle;
 }
+
+.tableau {
+    width : 100%;
+}
