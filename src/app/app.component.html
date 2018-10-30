@@ -1,4 +1,7 @@
-<p>salut</p>
+<div class="container">
+    <div class="row">
+        <p class="col-sm-6" *ngIf="enablePlayMode==false">Enable Geolocalisation to play!</p>
 
-<p *ngIf="enablePlayMode==false">Enable Geolocalisation to play!</p>
-<app-map [myLng]="myLng" [myLat]="myLat" *ngIf="enablePlayMode==true"></app-map>
+        <app-map [myLng]="myLng" [myLat]="myLat" *ngIf="enablePlayMode==true" class="col-sm-6"></app-map>
+    </div>
+</div>

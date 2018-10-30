@@ -1,3 +1,4 @@
-<agm-map [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng" [zoom]="8">
-
+<agm-map [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng" [zoom]="13">
+<agm-marker [latitude]="myLat"  [longitude]="myLng"></agm-marker>
+<agm-marker [latitude]="setRandomLatFromGeo()"  [longitude]="setRandomLngFromGeo()"></agm-marker>
 </agm-map>
