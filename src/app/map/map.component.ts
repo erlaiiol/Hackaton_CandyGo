@@ -11,12 +11,29 @@ export class MapComponent implements OnInit {
   @Input() myLat;
 
 
-  lat = this.myLng;
-  lng = this.myLat;
+  randomLng;
+  randomLat;
+  posArray = [];
+  randomPosArray() {
+    for (let i = 0; i < 10; i++) {
+      /*les valeurs de randomnumber sont les distances entre la géolocalisation, 
+      et le pin d'un bonbon. cette fonction donne la position au pin,
+      pour le moment pas de valeurs négatives, c'est à faire*/
+      let randomNumber = parseFloat(((Math.random() * 20 + (-2)) / 1000).toFixed(6));
+      let randomNumber2 = parseFloat(((Math.random() * 20 + 0) / 1000).toFixed(6));
+      this.posArray.push({
+      posArrayLng: parseFloat((this.myLng + randomNumber2).toFixed(6)),
+      posArrayLat: parseFloat((this.myLat + randomNumber).toFixed(6))
+    })}
+    console.log(this.posArray);
+  }
+  
 
   constructor() { }
   ngOnInit() {
+    this.randomPosArray();
+
   }
-  
+
 
 }
