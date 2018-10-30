@@ -1,5 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Eater');
+
+h1
+{
+    font-family: 'Eater', cursive;
+    color: white;
+}
 
 * {
     margin: 0;
