@@ -1,15 +1,15 @@
 .livre-regles {
-  position: absolute;
-  left: 0;
+  position:absolute;
   top: 1%;
+  left: 45%;
   width: 15vmin;
   height: auto;
 }
 
 .regles {
   position: absolute;
-  left: 1;
-  top: 22%;
+  left: 28%;
+  top: 24%;
   width: 100vmin;
   border: 1px solid orange;
   border-radius: 10px;
