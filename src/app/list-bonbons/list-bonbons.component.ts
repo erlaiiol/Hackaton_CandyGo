@@ -76,7 +76,7 @@ export class ListBonbonsComponent implements OnInit {
 
       { name : "Harib'oeil",
         quality : "Bonbon légendaire",
-        description : "La légendaire raconte qu'un légendaire bonbon n'attendrait qu'un dresseur de bonbons assez brave pour le croquer. Et de la bravoure, il en faut pour avaler ce que l'on croit être un oeil !",
+        description : "La légende raconte qu'un mythique bonbon n'attendrait qu'un dresseur de bonbons assez brave pour le croquer. Et de la bravoure, il en faut pour avaler ce que l'on croit être un oeil !",
         quantity : 0, 
         img : 'https://image.ibb.co/nzNpnf/Candy12.png'}
   ]
