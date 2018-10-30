@@ -1,6 +1,19 @@
-<p>salut</p>
+<div style="text-align:center">
+    <h1>
+        Welcome to {{ title }} site !
+    </h1>
+    <img width="100" alt="Angular Logo" src="../assets/images/araignee.gif">
+</div>
 
-<p *ngIf="enablePlayMode==false">Enable Geolocalisation to play!</p>
-<app-map [myLng]="myLng" [myLat]="myLat" *ngIf="enablePlayMode==true"></app-map>
-<app-list-bonbons></app-list-bonbons>
-<app-regles-jeu></app-regles-jeu>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <app-list-bonbons></app-list-bonbons>
+        </div>
+        <div class="col-md-6">
+            <p *ngIf="enablePlayMode==false">Enable Geolocalisation to play!</p>
+            <app-map [myLng]="myLng" [myLat]="myLat" *ngIf="enablePlayMode==true"></app-map>
+        </div>
+    </div>
+    <app-regles-jeu></app-regles-jeu>
+</div>
