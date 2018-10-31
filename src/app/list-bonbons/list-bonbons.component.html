@@ -6,7 +6,7 @@
   <div class="pre-scrollable">
     <tbody>
       <tr *ngFor="let bonbon of candyList; let i = index">
-        <th scope="row"><img [ngStyle]="{'filter':colorizeCandy(candyList[i].quantity)}" src="{{candyList[i].img}}">
+        <th scope="row"><img  [ngStyle]="{'filter':colorizeCandy(candyList[i].quantity)}" [ngClass]="zoomCandy(candyList[i].quantity)" src="{{candyList[i].img}}">
         </th>
         <td><b>{{candyList[i].name}}</b></td>
         <td [ngStyle]="{'color':getColor(candyList[i].quality)}">{{candyList[i].quality}}</td>

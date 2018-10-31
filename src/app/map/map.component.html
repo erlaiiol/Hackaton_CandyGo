@@ -1,16 +1,17 @@
+<button (click)="randomPosArray()">PINS</button>
 <div class="container" fxLayout="column">
     <div class="map" fxFlex="1 1 100%" #map>
     <agm-map [style.height.px]="map.offsetHeight" [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng"
     [zoom]="13" [styles]="styles">
-    <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng" [iconUrl]="icon"  (markerClick)="getCandy();nimportequoi.visible=false" [visible]="nimportequoi.visible">
-    <agm-snazzy-info-window [closeWhenOthersOpen]="true" [showCloseButton]="false" [isOpen]="nimportequoi.infoWindowVisible">
+    <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng" [iconUrl]="icon"  (markerClick)="getCandy();nimportequoi.visible=false; infoWindowVisible=true" [visible]="nimportequoi.visible">
+    <agm-snazzy-info-window [closeWhenOthersOpen]="true" [showCloseButton]="false" [isOpen]="infoWindowVisible">
     <ng-template>
     <div class="mapCard">
     <img [src]="candyList[bonbonNumber].img">
     <p [style.font-size.em]="'2'">"{{candyList[bonbonNumber].name}}"</p>
     <p [ngStyle]="{'color':getColor(candyList[bonbonNumber].quality)}">{{candyList[bonbonNumber].quality}}</p>
     <p>{{candyList[bonbonNumber].point}} point(s)</p>
-    <button type="button" class="btn btn-warning modalBtn" (click)="collectBonbon(); nimportequoi.infoWindowVisible=false">Pick Up !</button>
+    <button type="button" class="btn btn-warning modalBtn" (click)="collectBonbon(); infoWindowVisible=false">Pick Up !</button>
     </div>
 </ng-template>
     </agm-snazzy-info-window>

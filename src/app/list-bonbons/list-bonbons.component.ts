@@ -30,6 +30,12 @@ export class ListBonbonsComponent implements OnInit {
     }
   }
 
+  zoomCandy(quantity) {
+    if (quantity > 0) {
+      return 'animation'
+    }
+  }
+
   constructor(private service: CandyService) { }
 
   candyList = this.service.candyList;
