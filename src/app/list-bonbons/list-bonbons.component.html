@@ -1,16 +1,9 @@
+<nav class="navbar">
+  <span>“Je pense, donc je sue. De trouille, évidemment.”</span>
+</nav>
+
 <table class="table table-sm table-dark text-center tableau">
   <div class="pre-scrollable">
-    <thead>
-      <div class="sticky-top">
-        <tr>
-          <th scope="col"></th>
-          <th scope="col">Nom</th>
-          <th scope="col">Qualité</th>
-          <th scope="col">Description</th>
-          <th scope="col">Quantité</th>
-        </tr>
-      </div>
-    </thead>
     <tbody>
       <tr *ngFor="let bonbon of candyList; let i = index">
         <th scope="row"><img [ngStyle]="{'filter':colorizeCandy(candyList[i].quantity)}" src="{{candyList[i].img}}">

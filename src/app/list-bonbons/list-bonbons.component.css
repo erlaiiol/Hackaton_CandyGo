@@ -15,11 +15,9 @@ td, th {
 
 .tableau {
     width : 100%;
-    margin-top: 100px;
 }
 
-.sticky-top {
-    background-color: black;
-    width: 100%;
-    border: 1px solid purple;
+.navbar {
+    background-color:rgb(197, 133, 13);
+    justify-content: space-around;
 }
