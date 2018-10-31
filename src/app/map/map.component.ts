@@ -152,6 +152,7 @@ export class MapComponent implements OnInit {
         for (let i = 0; i < 10; i++) {
             /*les valeurs de randomnumber sont les distances entre la géolocalisation, 
             et le pin d'un bonbon. cette fonction donne la position au pin.*/
+            this.score = 0;
             let randomNumber = parseFloat(((Math.random() * 20 + (-2)) / 1000).toFixed(6)) * Math.cos(Math.random() * Math.PI);
             let randomNumber2 = parseFloat(((Math.random() * 20 + 0) / 1000).toFixed(6)) * Math.cos(Math.random() * Math.PI);
             this.posArray.push({
@@ -160,7 +161,6 @@ export class MapComponent implements OnInit {
                 visible: true
             })
         }
-        console.log(this.posArray);
     }
 
     constructor(private service: CandyService) { }
@@ -168,11 +168,11 @@ export class MapComponent implements OnInit {
     getCandy() {
 
         this.bonbonNumber = this.service.getRandom();
-        console.log(this.bonbonNumber);
     }
 
     collectBonbon() {
-        this.service.candyList[this.bonbonNumber]['quantity'] += this.service.candyList[this.bonbonNumber]['point'];
+        this.score += this.service.candyList[this.bonbonNumber]['point'];
+        this.service.candyList[this.bonbonNumber]['quantity']+=1;
         this.service.scroll(this.bonbonNumber);
     }
 
@@ -209,12 +209,6 @@ export class MapComponent implements OnInit {
 
     ngOnInit() {
         this.randomPosArray();
-
-        this.service.getCoordoneeApi(this.posArray[1].posArrayLng, this.posArray[1].posArrayLat)
-            .subscribe(data => {
-                this.coordonnéeApi = data
-            });
-        console.log(this.coordonnéeApi, this.posArray[1].posArrayLng, this.posArray[1].posArrayLat);
 
     }
 

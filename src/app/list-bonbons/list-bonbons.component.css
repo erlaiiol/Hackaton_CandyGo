@@ -24,6 +24,10 @@ td, th {
     text-align: center;
 }
 
+/* .table {
+    height : 55vh;
+} */
+
 .navbar {
     background-color:rgb(197, 133, 13);
     justify-content: space-around;

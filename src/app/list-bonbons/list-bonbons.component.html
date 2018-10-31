@@ -1,8 +1,8 @@
-<nav class="navbar">
+<nav class="navbar" [ngStyle]="{'font-family' : 'Eater', 'font-size': '15px'}">
   <span>“Je pense, donc je sue. De trouille, évidemment.”</span>
 </nav>
 
-<table class="table table-sm table-dark text-center tableau">
+<table class="table table-sm table-dark text-center">
   <div class="pre-scrollable">
     <tbody>
       <tr *ngFor="let bonbon of candyList; let i = index">
@@ -17,3 +17,5 @@
     </tbody>
   </div>
 </table>
+
+
