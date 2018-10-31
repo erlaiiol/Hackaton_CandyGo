@@ -24,6 +24,12 @@ export class ListBonbonsComponent implements OnInit {
     }
   }
 
+  colorizeCandy(quantity) {
+    if (quantity > 0) {
+      return 'grayscale(0%)'
+    }
+  }
+
   constructor(private service: CandyService) { }
 
   candyList = this.service.candyList;
