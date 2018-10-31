@@ -1,13 +1,15 @@
 <table class="table table-sm table-dark text-center tableau">
   <div class="pre-scrollable">
     <thead>
-      <tr>
-        <th scope="col"></th>
-        <th scope="col">Nom</th>
-        <th scope="col">Qualité</th>
-        <th scope="col">Description</th>
-        <th scope="col">Quantité</th>
-      </tr>
+      <div class="sticky-top">
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Nom</th>
+          <th scope="col">Qualité</th>
+          <th scope="col">Description</th>
+          <th scope="col">Quantité</th>
+        </tr>
+      </div>
     </thead>
     <tbody>
       <tr class="tableau" *ngFor="let bonbon of candyList; let i = index">
