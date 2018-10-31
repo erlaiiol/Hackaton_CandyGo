@@ -41,6 +41,7 @@ export class CandyService {
     return array;
   }
   
+  
   getCoordoneeApi(long,lat): Observable<any>  {
     this.url= "https://api-adresse.data.gouv.fr/reverse/?lon="+long+"&lat="+lat;
     return this.http.get(this.url);
