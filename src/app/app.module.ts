@@ -6,8 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { ListBonbonsComponent } from './list-bonbons/list-bonbons.component';
-import { ReglesJeuComponent } from './regles-jeu/regles-jeu.component';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
+import { ReglesJeuComponent } from './regles-jeu/regles-jeu.component';
+
 
 @NgModule({
   declarations: [

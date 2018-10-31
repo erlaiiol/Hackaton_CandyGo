@@ -20,8 +20,7 @@ agm-map{
     top: 5px;
     border:2px solid orangered;
     border-radius: 10px;
-    }
-    
+}
     
     .modalBtn {
     display: block;
@@ -29,8 +28,11 @@ agm-map{
     box-shadow: 2px 2px 2px;
     background-color: orangered;
     outline: 0;
-    }
-    
-    .mapCard, p {
+}
+
+.mapCard, p {
     color: white;
-    }
+    text-align: center;
+    font-weight: bold;
+}
+
