@@ -23,7 +23,7 @@ td, th {
     border: 1px solid purple;
   }
 
-.bonbon {
+.animation {
   animation-name: bonbon;
   animation-duration: 4s;
 }
