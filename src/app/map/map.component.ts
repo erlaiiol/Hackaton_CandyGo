@@ -18,7 +18,10 @@ export class MapComponent implements OnInit {
     coordonnéeApi = [];
     bonbonNumber: number;
     candyList = this.service.candyList;
+    quizzList = this.service.quizzList;
     infoWindowVisible=false;
+    pickUpButtonVisible = false;
+    lost = false;
 
 
     styles =
@@ -184,6 +187,23 @@ export class MapComponent implements OnInit {
             
         }
       }
+
+      checkAnswerTrue() {
+        if (this.quizzList[this.bonbonNumber].goodAnswer === "vrai") {
+            return this.pickUpButtonVisible = true;
+        }
+        else {
+            return this.lost = true;
+        }
+    }
+    checkAnswerFalse() {
+        if (this.quizzList[this.bonbonNumber].goodAnswer === "faux") {
+            return this.pickUpButtonVisible = true;
+        }
+        else {
+            return this.lost = true;
+        }
+    }
 
     ngOnInit() {
         this.randomPosArray();
