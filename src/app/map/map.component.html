@@ -10,16 +10,7 @@
     <p [style.font-size.em]="'2'">"{{candyList[bonbonNumber].name}}"</p>
     <p [ngStyle]="{'color':getColor(candyList[bonbonNumber].quality)}">{{candyList[bonbonNumber].quality}}</p>
     <p>{{candyList[bonbonNumber].point}} point(s)</p>
-<<<<<<< HEAD
     <button type="button" class="btn btn-warning modalBtn" (click)="collectBonbon(); nimportequoi.infoWindowVisible=false">Pick Up !</button>
-=======
-
-    <button type="button" class="modalBtn" (click)="collectBonbon(); nimportequoi.infoWindowVisible=false">Pick Up !</button>
-    <button type="button" class="btn btn-warning modalBtn" (click)="collectBonbon()">Pick Up !</button>
-    <!--insérez des infos comme du HTML Classique; les balises fonctionnent, de même que les interpolations {{}}-->
-    <!-- ressource: https://angular-maps.com/api-docs/agm-core/components/agminfowindow -->
-    <!--les inputs sont à mettre entre [], ex [isOpen]="true"-->
->>>>>>> 35a7253e229152ca1c223f753c573d2bc9613468
     </div>
 </ng-template>
     </agm-snazzy-info-window>
