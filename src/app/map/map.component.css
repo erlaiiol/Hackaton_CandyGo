@@ -1,14 +1,14 @@
 agm-map{
-    height:54vh;
+    height:64vh;
     }
-    
+
     img {
     display: block;
     margin: auto;
     height: 4vw;
-    width: 4vw; 
+    width: 4vw;
     }
-    
+
     .mapCard {
     display: block;
     background-color: black;
@@ -18,16 +18,15 @@ agm-map{
     transform: translateX(-50%);
     width: calc(100% - 60px);
     top: 5px;
-    border:2px solid orangered;
+    border:2px solid orange;
     border-radius: 10px;
 }
-    
+
     .modalBtn {
-    display: block;
-    margin: auto;
-    box-shadow: 2px 2px 2px;
-    background-color: orangered;
-    outline: 0;
+    width: 12vmin;
+    height: 5vmin;
+    background-color: orange;
+    color: black;
 }
 
 .mapCard, p {
@@ -35,4 +34,3 @@ agm-map{
     text-align: center;
     font-weight: bold;
 }
-
