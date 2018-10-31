@@ -18,6 +18,8 @@ export class MapComponent implements OnInit {
     coordonnéeApi = [];
     bonbonNumber: number;
     candyList = this.service.candyList;
+    visibleMarker=[true, true, true, true, true, true, true, true, true, true, true, true, true];
+
 
     styles =
 
@@ -150,7 +152,9 @@ export class MapComponent implements OnInit {
             let randomNumber2 = parseFloat(((Math.random() * 20 + 0) / 1000).toFixed(6)) * Math.cos(Math.random() * Math.PI);
             this.posArray.push({
                 posArrayLng: parseFloat((this.myLng + randomNumber2).toFixed(6)),
-                posArrayLat: parseFloat((this.myLat + randomNumber).toFixed(6))
+                posArrayLat: parseFloat((this.myLat + randomNumber).toFixed(6)),
+                visible:true,
+                infoWindowVisible:true
             })
         }
         console.log(this.posArray);
@@ -159,6 +163,7 @@ export class MapComponent implements OnInit {
     constructor(private service: CandyService) { }
 
     getCandy() {
+
         this.bonbonNumber = this.service.getRandom();
         console.log(this.bonbonNumber);
     }
