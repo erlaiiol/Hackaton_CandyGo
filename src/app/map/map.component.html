@@ -10,15 +10,16 @@
                     <ng-template>
                         <div class="mapCard">
                             <img [src]="candyList[bonbonNumber].img">
-                            <p [style.font-size.em]="'2'">"{{candyList[bonbonNumber].name}}"</p>
-                            <p [ngStyle]="{'color':getColor(candyList[bonbonNumber].quality)}">{{candyList[bonbonNumber].quality}}</p>
-                            <p>{{candyList[bonbonNumber].point}} point(s)</p>
-                            <p>{{quizzList[bonbonNumber].text}}</p>
-                            <input *ngIf="pickUpButtonVisible==false && this.lost==false" type="button" value="Vrai" (click)="checkAnswerTrue()">
-                            <input *ngIf="pickUpButtonVisible==false && this.lost==false" type="button" value="Faux" (click)="checkAnswerFalse()">
+                            <p [style.font-size.em]="'2.5'">"{{candyList[bonbonNumber].name}}"</p>
+                            <p [style.font-size.em]="'1.8'" [ngStyle]="{'color':getColor(candyList[bonbonNumber].quality)}">{{candyList[bonbonNumber].quality}}</p>
+                            <p [style.font-size.em]="'1.6'">{{candyList[bonbonNumber].point}} point(s)</p>
+                            <p [style.font-size.em]="'1.8'" [style.color]="'orangered'">Trouve la bonne réponse pour gagner ce bonbon !</p>
+                            <p [style.font-size.em]="'1.6'">{{quizzList[bonbonNumber].text}}</p>
+                            <input *ngIf="pickUpButtonVisible==false && this.lost==false" type="button" class="btn btn-dark modalBtn2" value="VRAI" (click)="checkAnswerTrue()">
+                            <input *ngIf="pickUpButtonVisible==false && this.lost==false" type="button" class="btn btn-dark modalBtn2" value="FAUX" (click)="checkAnswerFalse()">
                             <button *ngIf="pickUpButtonVisible==true" type="button" class="btn btn-warning modalBtn"
-                                (click)="collectBonbon(); infoWindowVisible=false">Pick Up !</button>
-                                <p *ngIf="this.lost==true">Perdu!</p>
+                                (click)="collectBonbon(); infoWindowVisible=false">CHOPE LE !</button>
+                                <p *ngIf="this.lost==true" [style.font-size.em] ="'2.5'" [style.color]="'red'">Perdu !</p>
                         </div>
                     </ng-template>
                 </agm-snazzy-info-window>

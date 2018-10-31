@@ -19,7 +19,7 @@ export class MapComponent implements OnInit {
     bonbonNumber: number;
     candyList = this.service.candyList;
     quizzList = this.service.quizzList;
-    infoWindowVisible=false;
+    infoWindowVisible = false;
     pickUpButtonVisible = false;
     lost = false;
 
@@ -156,7 +156,7 @@ export class MapComponent implements OnInit {
             this.posArray.push({
                 posArrayLng: parseFloat((this.myLng + randomNumber2).toFixed(6)),
                 posArrayLat: parseFloat((this.myLat + randomNumber).toFixed(6)),
-                visible:true
+                visible: true
             })
         }
         console.log(this.posArray);
@@ -173,22 +173,22 @@ export class MapComponent implements OnInit {
     collectBonbon() {
         this.service.candyList[this.bonbonNumber]['quantity'] += this.service.candyList[this.bonbonNumber]['point'];
     }
-    
-    getColor(quality) { 
-        switch (quality) {
-          case 'Bonbon commun':
-            return 'white';
-          case 'Bonbon rare':
-            return 'blue';
-          case 'Bonbon épique':
-            return 'purple';
-          case 'Bonbon légendaire':
-            return 'orange';
-            
-        }
-      }
 
-      checkAnswerTrue() {
+    getColor(quality) {
+        switch (quality) {
+            case 'Bonbon commun':
+                return 'white';
+            case 'Bonbon rare':
+                return 'blue';
+            case 'Bonbon épique':
+                return 'purple';
+            case 'Bonbon légendaire':
+                return 'orange';
+
+        }
+    }
+
+    checkAnswerTrue() {
         if (this.quizzList[this.bonbonNumber].goodAnswer === "vrai") {
             return this.pickUpButtonVisible = true;
         }
