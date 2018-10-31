@@ -18,12 +18,7 @@ export class MapComponent implements OnInit {
     coordonnéeApi = [];
     bonbonNumber: number;
     candyList = this.service.candyList;
-<<<<<<< HEAD
-    visibleMarker=[true, true, true, true, true, true, true, true, true, true, true, true, true];
-    quizzList = this.service.quizzList;
-=======
     infoWindowVisible=false;
->>>>>>> bcf4b04a0096fc147664ac49fd1c72fb1fbe2204
 
 
     styles =
