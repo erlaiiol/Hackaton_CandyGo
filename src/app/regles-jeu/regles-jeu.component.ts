@@ -13,6 +13,5 @@ export class ReglesJeuComponent implements OnInit {
   }
   handleClick() {
     this.rules = !this.rules;
-    console.log("bonjour")
   }
 }
