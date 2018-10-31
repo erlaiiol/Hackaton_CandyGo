@@ -56,84 +56,64 @@ export class CandyService {
 
   quizzList : object = [
     {
-        text : "Le premier nom connu donné à un gâteau signifie « offrande ».",
-        goodAnswer : "vrai"
+        text : "Les « fortune cookies » ne sont pas chinois.",
+        goodAnswer : "vrai",
+        answer : "VRAI. Les « fortune cookies » ne sont pas chinois. Ils sont probablement apparus dans la région de San Francisco au début du 20e siècle."
     },
     {
-        text : "Le nom de la pâte filo vient du grec phyllon qui veut dire « remplir ».",
-        goodAnswer : "faux"
+        text : "Un des plus grands pâtissiers et chefs de l’histoire s’appelait Carême.",
+        goodAnswer : "vrai",
+        answer : "VRAI. Né en 1784 à Paris et mort en 1833, le pâtissier et chef Antonin Carême est considéré par certains historiens comme le premier grand chef pâtissier des temps modernes."
+    },
+    {
+        text : "Les gaufres de Liège et de Bruxelles sont identiques.",
+        goodAnswer : "faux",
+        answer : "FAUX. La gaufre de Liège est une gaufre épaisse au sucre qui, habituellement, ne présente pas de coins. Quant à la gaufre de Bruxelles, elle est rectangulaire et plus grande que sa cousine liégeoise."
+    },
+    {
+        text : "La tarte aux pommes est une création américaine du début de la colonie.",
+        goodAnswer : "faux",
+        answer : "FAUX. Même si la tarte aux pommes est un mets typique des États-Unis, elle était savourée en Europe bien avant la découverte du Nouveau Monde."
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        goodAnswer : "vrai"
+        goodAnswer : "vrai",
+        answer : "VRAI. Le mot « dessert » vient du verbe « desservir », par référence au fait que le dessert était servi après que la table ait été débarrassée des autres plats."
     },
     {
-        text : "En Amérique latine, le populaire gâteau aux trois laits est fait avec du lait de trois espèces animales différentes.",
-        goodAnswer : "faux"
-    },
-    {
-        text : "Le nougat nous vient d’Allemagne et d’Autriche.",
-        goodAnswer : "faux"
-    },
-    {
-        text : "Le gâteau forêt-noire a les mêmes couleurs que les habits traditionnels des habitants de la Forêt-Noire.",
-        goodAnswer : "vrai"
+        text : "L’inventeur de la barbe à papa était dentiste.",
+        goodAnswer : "vrai",
+        answer : "VRAI. Le dentiste William James Morrison est l’inventeur de la barbe à papa. Il a aussi été le président de l’Association dentaire du Tennessee en 1894."
     },
     {
         text : "Le Brésil est le plus grand producteur de fèves de cacao.",
-        goodAnswer : "faux"
+        goodAnswer : "faux",
+        answer : "FAUX. C’est la Côte d’Ivoire qui est le plus grand producteur de fèves de cacao avec environ 35 % de la production mondiale."
     },
     {
-        text : "Le cannolo est une création des Italo-Américains de la région de New York.",
-        goodAnswer : "faux"
-    },
-    {
-        text : "Dans l’Antiquité, la cannelle servait à l’embaumement.",
-        goodAnswer : "vrai"
-    },
-    {
-        text : "Les Aztèques ont été les premiers à servir le chocolat en boisson.",
-        goodAnswer : "vrai"
-    },
-    {
-        text : "On appelle cette pâtisserie « éclair » parce qu’elle se mange vite.",
-        goodAnswer : "vrai"
+        text : "Le nom de la pâte filo vient du grec phyllon qui veut dire « remplir ».",
+        goodAnswer : "faux",
+        answer : "FAUX. Le nom de la pâte filo, aussi orthographié phyllo, vient du grec phyllon qui signifie « feuille »."
     },
     {
         text : "Le sorbet est un mélange de purée de fruit et de lait écrémé.",
-        goodAnswer : "faux"
+        goodAnswer : "faux",
+        answer : "FAUX. Les sorbets ne contiennent ni lait, ni crème, ni œuf. Ce sont des glaces à l’eau fabriquées à partir de jus de fruits, d’eau, de sucre et parfois parfumées d’une liqueur."
     },
     {
-      text : "La tarte Tatin a été créée à la suite d’une erreur d’inattention.",
-      goodAnswer : "vrai"
+        text : "Le nougat nous vient d’Allemagne et d’Autriche.",
+        goodAnswer : "faux",
+        answer : "FAUX. Le nougat est une confiserie typique des pays du bassin méditerranéen."
     },
     {
-      text : "Le point de fusion du chocolat est légèrement inférieur à la température du corps humain.",
-      goodAnswer : "vrai"
+        text : "Le miel peut se conserver plus de 1000 ans.",
+        goodAnswer : "vrai",
+        answer : "VRAI. Le miel est un produit non périssable qui peut rester intact pendant plus de 1000 ans."
     },
     {
-      text : "Comme le chocolat noir, le chocolat blanc a des propriétés antioxydantes.",
-      goodAnswer : "faux"
-    },
-    {
-      text : "Un pastel de nata est une pâtisserie typique de la cuisine berbère.",
-      goodAnswer : "faux"
-    },
-    {
-      text : "Le gâteau matcha est fait avec de la poudre de pistache.",
-      goodAnswer : "faux"
-    },
-    {
-      text : "La cerise est l’un des trois parfums de la tranche napolitaine traditionnelle.",
-      goodAnswer : "faux"
-    },
-    {
-      text : "Le miel peut se conserver plus de 1000 ans.",
-      goodAnswer : "vrai"
-    },
-    {
-      text : "Les « fortune cookies » ne sont pas chinois.",
-      goodAnswer : "faux"
+        text : "Le point de fusion du chocolat est légèrement inférieur à la température du corps humain.",
+        goodAnswer : "vrai",
+        answer : "VRAI. Le point de fusion du chocolat est légèrement inférieur à la température du corps humain. C’est la raison pour laquelle il fond si naturellement dans la bouche."
     }
 ]
 

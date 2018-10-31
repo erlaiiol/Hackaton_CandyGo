@@ -39,6 +39,7 @@ img {
     color: black;
     opacity: 1 !important;
     box-shadow: 2px 2px 2px white;
+    margin-bottom: 5px;
 }
 
 .modalBtn2 {
