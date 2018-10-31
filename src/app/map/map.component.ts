@@ -18,7 +18,7 @@ export class MapComponent implements OnInit {
     coordonnéeApi = [];
     bonbonNumber: number;
     candyList = this.service.candyList;
-    visibleMarker=[true, true, true, true, true, true, true, true, true, true, true, true, true];
+    infoWindowVisible=false;
 
 
     styles =
@@ -153,8 +153,7 @@ export class MapComponent implements OnInit {
             this.posArray.push({
                 posArrayLng: parseFloat((this.myLng + randomNumber2).toFixed(6)),
                 posArrayLat: parseFloat((this.myLat + randomNumber).toFixed(6)),
-                visible:true,
-                infoWindowVisible:true
+                visible:true
             })
         }
         console.log(this.posArray);
