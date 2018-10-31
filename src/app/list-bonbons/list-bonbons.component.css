@@ -24,12 +24,12 @@ td, th {
     border: 1px solid purple;
   }
 
-.bonbon {
+.animation {
   animation-name: bonbon;
   animation-duration: 4s;
 }
 
 @keyframes bonbon {
-  from {transform: scale(1, 2);}
-  to {transform: scale(2, 1);}
+  from {transform: scale(1);}
+  to {transform: scale(2);}
 }
