@@ -2,7 +2,7 @@
     <div class="map" fxFlex="1 1 100%" #map>
     <agm-map [style.height.px]="map.offsetHeight" [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng"
     [zoom]="13" [styles]="styles">
-    <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng" [iconUrl]="icon" >
+    <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng" [iconUrl]="icon"  (markerClick)="getCandy()">
     <agm-snazzy-info-window [closeWhenOthersOpen]="true" [showCloseButton]="false">
     <ng-template>
     <div class="mapCard">
