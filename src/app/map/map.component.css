@@ -1,12 +1,19 @@
 agm-map{
     height:55vh;
+<<<<<<< HEAD
 }
 
 img {
+=======
+    }
+    
+    img {
+>>>>>>> 4f3fe06c28962d630132d884636eab88d081edab
     display: block;
     margin: auto;
     height: 4vw;
     width: 4vw;
+<<<<<<< HEAD
 }
 
 .navbarMap {
@@ -20,6 +27,21 @@ img {
 }
 
 .mapCard {
+=======
+    }
+    
+    .navbarMap {
+    background-color:rgb(197, 133, 13);
+    height: 40px;
+    color: white; 
+    }
+    
+    .score {
+    margin-left: 35%;
+    }
+    
+    .mapCard {
+>>>>>>> 4f3fe06c28962d630132d884636eab88d081edab
     display: block;
     background-color: black;
     min-width: 35vw;
@@ -30,30 +52,29 @@ img {
     border:2px solid orange;
     border-radius: 10px;
     padding: 10px;
-}
-
-.modalBtn {
+    }
+    
+    .modalBtn {
     width: 15vmin;
     height: 5vmin;
     background-color: orange;
     color: black;
     opacity: 1 !important;
     box-shadow: 2px 2px 2px white;
-    margin-bottom: 5px;
-}
-
-.modalBtn2 {
+    }
+    
+    .modalBtn2 {
     width: 15vmin;
     height: 5vmin;
     color: white;
     opacity: 1 !important;
     margin-right: 5px;
     box-shadow: 2px 2px 2px white;
-}
-
-.mapCard, p {
+    }
+    
+    .mapCard, p {
     color: white;
     text-align: center;
     font-weight: bold;
     opacity: 0.9;
-}
+    }

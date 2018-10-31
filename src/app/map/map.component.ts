@@ -161,7 +161,6 @@ export class MapComponent implements OnInit {
                 visible: true
             })
         }
-        console.log(this.posArray);
     }
 
     constructor(private service: CandyService) { }
@@ -169,11 +168,15 @@ export class MapComponent implements OnInit {
     getCandy() {
 
         this.bonbonNumber = this.service.getRandom();
-        console.log(this.bonbonNumber);
     }
 
     collectBonbon() {
         this.score += this.service.candyList[this.bonbonNumber]['point'];
+<<<<<<< HEAD
+=======
+        this.service.candyList[this.bonbonNumber]['quantity']+=1;
+        this.service.scroll(this.bonbonNumber);
+>>>>>>> 4f3fe06c28962d630132d884636eab88d081edab
     }
 
     getColor(quality) {
@@ -209,12 +212,6 @@ export class MapComponent implements OnInit {
 
     ngOnInit() {
         this.randomPosArray();
-
-        this.service.getCoordoneeApi(this.posArray[1].posArrayLng, this.posArray[1].posArrayLat)
-            .subscribe(data => {
-                this.coordonnéeApi = data
-            });
-        console.log(this.coordonnéeApi, this.posArray[1].posArrayLng, this.posArray[1].posArrayLat);
 
     }
 
