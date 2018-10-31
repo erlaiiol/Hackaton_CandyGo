@@ -7,8 +7,8 @@
     <ng-template>
     <div class="mapCard">
     <img [src]="candyList[bonbonNumber].img">
-    <p>Bonbon ordinaire</p>
-    <p>1 point</p>
+    <p>{{candyList[bonbonNumber].quality}}</p>
+    <p>{{candyList[bonbonNumber].point}} point(s)</p>
     <button type="button" class="modalBtn" (click)="collectBonbon()">Pick Up !</button>
     <!--insérez des infos comme du HTML Classique; les balises fonctionnent, de même que les interpolations {{}}-->
     <!-- ressource: https://angular-maps.com/api-docs/agm-core/components/agminfowindow -->

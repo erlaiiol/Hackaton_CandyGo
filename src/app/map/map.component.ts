@@ -165,7 +165,9 @@ export class MapComponent implements OnInit {
     }
 
     collectBonbon() {
-        // additionne les bonbons dans le tableau
+        this.service.candyList[this.bonbonNumber]['quantity'] += this.service.candyList[this.bonbonNumber]['point'];
+        console.log(this.service.candyList[this.bonbonNumber]['quantity']);
+        console.log(this.service.candyList[this.bonbonNumber])
     }
 
     ngOnInit() {
