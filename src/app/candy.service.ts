@@ -40,6 +40,13 @@ export class CandyService {
     }
     return array;
   }
+
+  numero;
+
+  scroll(bonbon){
+    this.numero = bonbon;
+    return this.numero;
+  }
   
   
   getCoordoneeApi(long,lat): Observable<any>  {
@@ -61,40 +68,72 @@ export class CandyService {
         goodAnswer : "vrai"
     },
     {
-        text : "Le mot « dessert » vient du verbe « desservir ».",
+        text : "En Amérique latine, le populaire gâteau aux trois laits est fait avec du lait de trois espèces animales différentes.",
+        goodAnswer : "faux"
+    },
+    {
+        text : "Le nougat nous vient d’Allemagne et d’Autriche.",
+        goodAnswer : "faux"
+    },
+    {
+        text : "Le gâteau forêt-noire a les mêmes couleurs que les habits traditionnels des habitants de la Forêt-Noire.",
         goodAnswer : "vrai"
     },
     {
-        text : "Le mot « dessert » vient du verbe « desservir ».",
+        text : "Le Brésil est le plus grand producteur de fèves de cacao.",
+        goodAnswer : "faux"
+    },
+    {
+        text : "Le cannolo est une création des Italo-Américains de la région de New York.",
+        goodAnswer : "faux"
+    },
+    {
+        text : "Dans l’Antiquité, la cannelle servait à l’embaumement.",
         goodAnswer : "vrai"
     },
     {
-        text : "Le mot « dessert » vient du verbe « desservir ».",
+        text : "Les Aztèques ont été les premiers à servir le chocolat en boisson.",
         goodAnswer : "vrai"
     },
     {
-        text : "Le mot « dessert » vient du verbe « desservir ».",
+        text : "On appelle cette pâtisserie « éclair » parce qu’elle se mange vite.",
         goodAnswer : "vrai"
     },
     {
-        text : "Le mot « dessert » vient du verbe « desservir ».",
-        goodAnswer : "vrai"
+        text : "Le sorbet est un mélange de purée de fruit et de lait écrémé.",
+        goodAnswer : "faux"
     },
     {
-        text : "Le mot « dessert » vient du verbe « desservir ».",
-        goodAnswer : "vrai"
+      text : "La tarte Tatin a été créée à la suite d’une erreur d’inattention.",
+      goodAnswer : "vrai"
     },
     {
-        text : "Le mot « dessert » vient du verbe « desservir ».",
-        goodAnswer : "vrai"
+      text : "Le point de fusion du chocolat est légèrement inférieur à la température du corps humain.",
+      goodAnswer : "vrai"
     },
     {
-        text : "Le mot « dessert » vient du verbe « desservir ».",
-        goodAnswer : "vrai"
+      text : "Comme le chocolat noir, le chocolat blanc a des propriétés antioxydantes.",
+      goodAnswer : "faux"
     },
     {
-        text : "Le mot « dessert » vient du verbe « desservir ».",
-        goodAnswer : "vrai"
+      text : "Un pastel de nata est une pâtisserie typique de la cuisine berbère.",
+      goodAnswer : "faux"
+    },
+    {
+      text : "Le gâteau matcha est fait avec de la poudre de pistache.",
+      goodAnswer : "faux"
+    },
+    {
+      text : "La cerise est l’un des trois parfums de la tranche napolitaine traditionnelle.",
+      goodAnswer : "faux"
+    },
+    {
+      text : "Le miel peut se conserver plus de 1000 ans.",
+      goodAnswer : "vrai"
+    },
+    {
+      text : "Les « fortune cookies » ne sont pas chinois.",
+      goodAnswer : "faux"
     }
 ]
 

@@ -24,8 +24,16 @@ export class ListBonbonsComponent implements OnInit {
     }
   }
 
+  scrollTo(){
+    let number = this.service.numero;
+    let element = document.getElementById("item" + number);
+
+    element.scrollIntoView({behavior: "smooth", block : "center", inline: "nearest"});
+  }
+
   colorizeCandy(quantity) {
     if (quantity > 0) {
+      this.scrollTo();
       return 'grayscale(0%)'
     }
   }
