@@ -18,6 +18,12 @@ td, th {
     margin-top: 100px;
 }
 
+.sticky-top {
+    background-color: black;
+    width: 100%;
+    border: 1px solid purple;
+  }
+
 .bonbon {
   animation-name: bonbon;
   animation-duration: 4s;
