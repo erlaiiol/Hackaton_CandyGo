@@ -35,3 +35,12 @@ img {
     font-weight: bold;
     opacity: 0.9;
 }
+
+.pumpkinBtn {
+  margin-left: 2vmin;
+  width: 9vmin;
+  height: 5vmin;
+  background-color: orange;
+  color: black;
+
+}
