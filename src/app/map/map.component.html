@@ -1,12 +1,15 @@
-<button (click)="randomPosArray()">PINS</button>
 <div class="container" fxLayout="column">
+    <nav class="navbarMap">
+        <button class="btn btn-dark text-left"(click)="randomPosArray()">Refresh</button>
+        <span class="score">SCORE: {{ score }}</span>
+    </nav>
     <div class="map" fxFlex="1 1 100%" #map>
         <agm-map [style.height.px]="map.offsetHeight" [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng"
             [zoom]="13" [styles]="styles">
             <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng"
                 [iconUrl]="icon" (markerClick)="getCandy();nimportequoi.visible=false; infoWindowVisible=true; this.lost=false; pickUpButtonVisible=false"
                 [visible]="nimportequoi.visible">
-                <agm-snazzy-info-window [closeWhenOthersOpen]="true" [showCloseButton]="false" [isOpen]="infoWindowVisible">
+                <agm-snazzy-info-window [closeWhenOthersOpen]="true" [showCloseButton]="true" [isOpen]="infoWindowVisible">
                     <ng-template>
                         <div class="mapCard">
                             <img [src]="candyList[bonbonNumber].img">

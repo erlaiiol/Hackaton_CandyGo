@@ -1,5 +1,5 @@
 agm-map{
-    height:60vh;
+    height:55vh;
 }
 
 img {
@@ -7,6 +7,16 @@ img {
     margin: auto;
     height: 4vw;
     width: 4vw;
+}
+
+.navbarMap {
+    background-color:rgb(197, 133, 13);
+    height: 40px;
+    color: white;  
+}
+
+.score {
+    margin-left: 35%;
 }
 
 .mapCard {
