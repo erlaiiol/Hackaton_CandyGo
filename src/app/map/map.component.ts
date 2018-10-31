@@ -17,6 +17,7 @@ export class MapComponent implements OnInit {
     posArray = [];
     coordonnéeApi = [];
     bonbonNumber: number;
+    candyList = this.service.candyList;
 
     styles =
 
@@ -177,4 +178,6 @@ export class MapComponent implements OnInit {
         console.log(this.coordonnéeApi, this.posArray[1].posArrayLng, this.posArray[1].posArrayLat);
 
     }
+
+
 }

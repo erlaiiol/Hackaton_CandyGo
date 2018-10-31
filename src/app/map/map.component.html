@@ -3,10 +3,10 @@
     <agm-map [style.height.px]="map.offsetHeight" [streetViewControl]="false" [latitude]="myLat" [longitude]="myLng"
     [zoom]="13" [styles]="styles">
     <agm-marker *ngFor="let nimportequoi of posArray" [latitude]="nimportequoi.posArrayLat" [longitude]="nimportequoi.posArrayLng" [iconUrl]="icon"  (markerClick)="getCandy()">
-    <agm-snazzy-info-window [closeWhenOthersOpen]="true" [showCloseButton]="false">
+    <agm-snazzy-info-window [closeWhenOthersOpen]="true" [showCloseButton]="false" >
     <ng-template>
     <div class="mapCard">
-    <img src="../assets/images/bonbon01.png">
+    <img [src]="candyList[bonbonNumber].img">
     <p>Bonbon ordinaire</p>
     <p>1 point</p>
     <button type="button" class="modalBtn" (click)="collectBonbon()">Pick Up !</button>
