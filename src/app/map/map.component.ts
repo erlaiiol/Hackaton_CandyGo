@@ -22,6 +22,7 @@ export class MapComponent implements OnInit {
     infoWindowVisible = false;
     pickUpButtonVisible = false;
     lost = false;
+    score: number;
 
 
     styles =
@@ -172,6 +173,7 @@ export class MapComponent implements OnInit {
 
     collectBonbon() {
         this.service.candyList[this.bonbonNumber]['quantity'] += this.service.candyList[this.bonbonNumber]['point'];
+        this.service.scroll(this.bonbonNumber);
     }
 
     getColor(quality) {
