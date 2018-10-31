@@ -8,9 +8,11 @@
       <tr *ngFor="let bonbon of candyList; let i = index">
         <th scope="row"><img  [ngStyle]="{'filter':colorizeCandy(candyList[i].quantity)}" [ngClass]="zoomCandy(candyList[i].quantity)" src="{{candyList[i].img}}">
         </th>
-        <td><b>{{candyList[i].name}}</b></td>
+        <td *ngIf="candyList[i].quantity > 0"><b>{{candyList[i].name}}</b></td>
+        <td *ngIf="candyList[i].quantity == 0"><b>???</b></td>
         <td [ngStyle]="{'color':getColor(candyList[i].quality)}">{{candyList[i].quality}}</td>
-        <td>{{candyList[i].description}}</td>
+        <td *ngIf="candyList[i].quantity > 0">{{candyList[i].description}}</td>
+        <td class ="tableau" *ngIf="candyList[i].quantity == 0"><b>???</b></td>
         <td>{{candyList[i].quantity}}</td>
       </tr>
     </tbody>

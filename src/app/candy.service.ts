@@ -47,54 +47,54 @@ export class CandyService {
     return this.http.get(this.url);
   }
 
-  quizzList : [
+  quizzList : object = [
     {
         text : "Le premier nom connu donné à un gâteau signifie « offrande ».",
-        answer : true
+        goodAnswer : "vrai"
     },
     {
         text : "Le nom de la pâte filo vient du grec phyllon qui veut dire « remplir ».",
-        answer : false
+        goodAnswer : "faux"
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        answer : true
+        goodAnswer : "vrai"
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        answer : true
+        goodAnswer : "vrai"
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        answer : true
+        goodAnswer : "vrai"
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        answer : true
+        goodAnswer : "vrai"
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        answer : true
+        goodAnswer : "vrai"
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        answer : true
+        goodAnswer : "vrai"
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        answer : true
+        goodAnswer : "vrai"
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        answer : true
+        goodAnswer : "vrai"
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        answer : true
+        goodAnswer : "vrai"
     },
     {
         text : "Le mot « dessert » vient du verbe « desservir ».",
-        answer : true
+        goodAnswer : "vrai"
     }
 ]
 
