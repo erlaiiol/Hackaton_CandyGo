@@ -27,6 +27,10 @@ td, th {
   animation-duration: 4s;
 }
 
+.table {
+    height: 55vh;
+}
+
 @keyframes bonbon {
   from {transform: scale(1, 2);}
   to {transform: scale(2, 1);}
