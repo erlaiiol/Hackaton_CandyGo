@@ -19,6 +19,7 @@ export class MapComponent implements OnInit {
     bonbonNumber: number;
     candyList = this.service.candyList;
     visibleMarker=[true, true, true, true, true, true, true, true, true, true, true, true, true];
+    quizzList = this.service.quizzList;
 
 
     styles =

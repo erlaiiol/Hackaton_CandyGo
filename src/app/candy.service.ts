@@ -15,18 +15,18 @@ export class CandyService {
 
   getRandom(){ // Génère une probabilté à appeler lors du clic sur la modale.
     var num=Math.random();
-    if(num < 0.12) return 1;  //probability 0.35
-    else if(num < 0.24) return 2; // probability 0.25
-    else if(num < 0.36) return 3; //probability 0.20
-    else if(num < 0.46) return 4; //probability 0.15
-    else if(num < 0.56) return 5; //probability 0.15
-    else if(num < 0.66) return 6; //probability 0.15
-    else if(num < 0.73) return 7; //probability 0.15
-    else if(num < 0.80) return 8; //probability 0.15
-    else if(num < 0.87) return 9; //probability 0.15
-    else if(num < 0.92) return 10; //probability 0.15
-    else if(num < 0.97) return 11; //probability 0.15
-    else return 12;  //probability 0.05
+    if(num < 0.12) return 0;  //probability 0.35
+    else if(num < 0.24) return 1; // probability 0.25
+    else if(num < 0.36) return 2; //probability 0.20
+    else if(num < 0.46) return 3; //probability 0.15
+    else if(num < 0.56) return 4; //probability 0.15
+    else if(num < 0.66) return 5; //probability 0.15
+    else if(num < 0.73) return 6; //probability 0.15
+    else if(num < 0.80) return 7; //probability 0.15
+    else if(num < 0.87) return 8; //probability 0.15
+    else if(num < 0.92) return 9; //probability 0.15
+    else if(num < 0.97) return 10; //probability 0.15
+    else return 11;  //probability 0.05
   }
 
 //   generateCandy(array) { // Génère un bonbon aléatoire à partir d'un tableau prédéfini.
@@ -46,6 +46,57 @@ export class CandyService {
     this.url= "https://api-adresse.data.gouv.fr/reverse/?lon="+long+"&lat="+lat;
     return this.http.get(this.url);
   }
+
+  quizzList : [
+    {
+        text : "Le premier nom connu donné à un gâteau signifie « offrande ».",
+        answer : true
+    },
+    {
+        text : "Le nom de la pâte filo vient du grec phyllon qui veut dire « remplir ».",
+        answer : false
+    },
+    {
+        text : "Le mot « dessert » vient du verbe « desservir ».",
+        answer : true
+    },
+    {
+        text : "Le mot « dessert » vient du verbe « desservir ».",
+        answer : true
+    },
+    {
+        text : "Le mot « dessert » vient du verbe « desservir ».",
+        answer : true
+    },
+    {
+        text : "Le mot « dessert » vient du verbe « desservir ».",
+        answer : true
+    },
+    {
+        text : "Le mot « dessert » vient du verbe « desservir ».",
+        answer : true
+    },
+    {
+        text : "Le mot « dessert » vient du verbe « desservir ».",
+        answer : true
+    },
+    {
+        text : "Le mot « dessert » vient du verbe « desservir ».",
+        answer : true
+    },
+    {
+        text : "Le mot « dessert » vient du verbe « desservir ».",
+        answer : true
+    },
+    {
+        text : "Le mot « dessert » vient du verbe « desservir ».",
+        answer : true
+    },
+    {
+        text : "Le mot « dessert » vient du verbe « desservir ».",
+        answer : true
+    }
+]
 
   candyList : object[] = [
     { name : "Dragibeurk",
