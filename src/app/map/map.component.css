@@ -1,33 +1,12 @@
 agm-map{
     height:55vh;
-<<<<<<< HEAD
-}
-
-img {
-=======
     }
     
     img {
->>>>>>> 4f3fe06c28962d630132d884636eab88d081edab
     display: block;
     margin: auto;
     height: 4vw;
     width: 4vw;
-<<<<<<< HEAD
-}
-
-.navbarMap {
-    background-color:rgb(197, 133, 13);
-    height: 40px;
-    color: white;  
-}
-
-.score {
-    margin-left: 35%;
-}
-
-.mapCard {
-=======
     }
     
     .navbarMap {
@@ -41,7 +20,6 @@ img {
     }
     
     .mapCard {
->>>>>>> 4f3fe06c28962d630132d884636eab88d081edab
     display: block;
     background-color: black;
     min-width: 35vw;

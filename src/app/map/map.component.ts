@@ -172,11 +172,8 @@ export class MapComponent implements OnInit {
 
     collectBonbon() {
         this.score += this.service.candyList[this.bonbonNumber]['point'];
-<<<<<<< HEAD
-=======
         this.service.candyList[this.bonbonNumber]['quantity']+=1;
         this.service.scroll(this.bonbonNumber);
->>>>>>> 4f3fe06c28962d630132d884636eab88d081edab
     }
 
     getColor(quality) {
