@@ -171,6 +171,20 @@ export class MapComponent implements OnInit {
     collectBonbon() {
         this.service.candyList[this.bonbonNumber]['quantity'] += this.service.candyList[this.bonbonNumber]['point'];
     }
+    
+    getColor(quality) { 
+        switch (quality) {
+          case 'Bonbon commun':
+            return 'white';
+          case 'Bonbon rare':
+            return 'blue';
+          case 'Bonbon épique':
+            return 'purple';
+          case 'Bonbon légendaire':
+            return 'orange';
+            
+        }
+      }
 
     ngOnInit() {
         this.randomPosArray();

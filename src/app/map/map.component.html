@@ -7,8 +7,10 @@
     <ng-template>
     <div class="mapCard">
     <img [src]="candyList[bonbonNumber].img">
-    <p>{{candyList[bonbonNumber].quality}}</p>
+    <p [style.font-size.em]="'2'">"{{candyList[bonbonNumber].name}}"</p>
+    <p [ngStyle]="{'color':getColor(candyList[bonbonNumber].quality)}">{{candyList[bonbonNumber].quality}}</p>
     <p>{{candyList[bonbonNumber].point}} point(s)</p>
+
     <button type="button" class="modalBtn" (click)="collectBonbon(); nimportequoi.infoWindowVisible=false">Pick Up !</button>
     <button type="button" class="btn btn-warning modalBtn" (click)="collectBonbon()">Pick Up !</button>
     <!--insérez des infos comme du HTML Classique; les balises fonctionnent, de même que les interpolations {{}}-->
