@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'CandyGo';
+  title = 'Candy City';
+  myLng;
+  myLat;
+
+  
+  enablePlayMode=false;
+  displayLocationInfo = (position) => {
+    this.myLng = position.coords.longitude;
+    this.myLat = position.coords.latitude;
+    this.enablePlayMode=true;
+    this.myLng.toFixed(6);
+    this.myLat.toFixed(6);
+}
+
+
+ngOnInit() {
+  if (navigator.geolocation) {
+    this.enablePlayMode=false;
+    navigator.geolocation.getCurrentPosition(this.displayLocationInfo.bind(this));
+  }
+}
 }

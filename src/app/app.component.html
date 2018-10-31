@@ -1,0 +1,25 @@
+<link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+<div style="text-align:center">
+    <h1>
+        Welcome to {{ title }} !
+    </h1>
+</div>
+<div class="araignee">
+  <img class="" width="100" alt="Angular Logo" src="../assets/images/araignee.gif">
+</div>
+<div class="araignee2">
+  <img class="araignee2" width="100" alt="Angular Logo" src="../assets/images/araignee.gif">
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <app-list-bonbons></app-list-bonbons>
+        </div>
+        <div class="col-md-6">
+            <p *ngIf="enablePlayMode==false">Enable Geolocalisation to play!</p>
+            <app-map [myLng]="myLng" [myLat]="myLat" *ngIf="enablePlayMode==true"></app-map>
+        </div>
+    </div>
+    <app-regles-jeu></app-regles-jeu>
+</div>

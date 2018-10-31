@@ -1,0 +1,58 @@
+agm-map{
+    height:55vh;
+    }
+    
+    img {
+    display: block;
+    margin: auto;
+    height: 4vw;
+    width: 4vw;
+    }
+    
+    .navbarMap {
+    background-color:rgb(197, 133, 13);
+    height: 40px;
+    color: white; 
+    }
+    
+    .score {
+    margin-left: 35%;
+    }
+    
+    .mapCard {
+    display: block;
+    background-color: black;
+    min-width: 35vw;
+    position: absolute;
+    transform: translateX(-50%);
+    width: calc(100% - 60px);
+    top: -200px;
+    border:2px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+    }
+    
+    .modalBtn {
+    width: 15vmin;
+    height: 5vmin;
+    background-color: orange;
+    color: black;
+    opacity: 1 !important;
+    box-shadow: 2px 2px 2px white;
+    }
+    
+    .modalBtn2 {
+    width: 15vmin;
+    height: 5vmin;
+    color: white;
+    opacity: 1 !important;
+    margin-right: 5px;
+    box-shadow: 2px 2px 2px white;
+    }
+    
+    .mapCard, p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.9;
+    }

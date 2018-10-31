@@ -1,0 +1,33 @@
+.livre-regles {
+  position:absolute;
+  top: 5%;
+  left: 45%;
+  width: 15vmin;
+  height: auto;
+}
+.livre-regles img {
+  width: 15vmin;
+}
+
+.livre-regles:hover {
+  cursor: pointer;
+}
+
+.livre-texte {
+  font-family : 'Eater', cursive;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.regles {
+  position: absolute;
+  left: 55%;
+  top: 12%;
+  width: 100vmin;
+  border-radius: 10px;
+  background-color: black;
+  color: whitesmoke;
+  opacity: 0.8;
+  padding: 1vmin;
+  font-family : 'Eater', cursive;
+}
