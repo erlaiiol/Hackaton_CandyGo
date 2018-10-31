@@ -10,7 +10,7 @@ export class ListBonbonsComponent implements OnInit {
 
 
 
-  getColor(quality) { 
+  getColor(quality) {
     switch (quality) {
       case 'Bonbon commun':
         return 'white';
@@ -20,13 +20,19 @@ export class ListBonbonsComponent implements OnInit {
         return 'purple';
       case 'Bonbon légendaire':
         return 'orange';
-        
+
     }
   }
 
   colorizeCandy(quantity) {
     if (quantity > 0) {
       return 'grayscale(0%)'
+    }
+  }
+
+  zoomCandy(quantity) {
+    if (quantity > 0) {
+      return 'animation'
     }
   }
 
