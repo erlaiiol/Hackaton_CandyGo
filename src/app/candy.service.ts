@@ -128,7 +128,8 @@ export class CandyService {
       { name : "Harib'oeil",
         quality : "Bonbon légendaire",
         description : "La légende raconte qu'un mythique bonbon n'attendrait qu'un dresseur de bonbons assez brave pour le croquer. Et de la bravoure, il en faut pour avaler ce que l'on croit être un oeil !",
-        quantity : 50, 
+        quantity : 0, 
+        point: 50,
         img : 'https://image.ibb.co/nzNpnf/Candy12.png'}
   ]
   
