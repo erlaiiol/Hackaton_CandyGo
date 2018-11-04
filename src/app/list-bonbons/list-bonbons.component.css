@@ -24,9 +24,7 @@ td, th {
     text-align: center;
 }
 
-/* .table {
-    height : 55vh;
-} */
+
 
 .navbar {
     background-color:rgb(197, 133, 13);
@@ -39,9 +37,6 @@ td, th {
   z-index: 1000;
 }
 
-.table {
-    height: 55vh;
-}
 
 @keyframes bonbon {
   from {transform: scale(1, 2);}

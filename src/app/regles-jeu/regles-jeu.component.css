@@ -21,8 +21,9 @@
 
 .regles {
   position: absolute;
-  left: 55%;
-  top: 12%;
+  left: 50%;
+  transform: translate( -50%);
+  top: 8%;
   width: 100vmin;
   border-radius: 10px;
   background-color: black;
